@@ -317,14 +317,15 @@
         <!-- TITLE SLIDE -->
         <div class="slide title-slide">
             <div class="slide-content">
-                <h1>Protein Sequence Classification</h1>
-                <h2>Feature Selection & Machine Learning Implementation</h2>
-                <div style="margin-top: 40px; font-size: 18px; opacity: 0.9;">
-                    <p>Implementation of: Kannan et al., 2014</p>
-                    <p style="margin-top: 10px;">"Efficient Feature Selection and Classification of Protein Sequences"</p>
+                <h1 style="color: white; font-size: 52px; text-shadow: 2px 2px 8px rgba(0,0,0,0.5);">Protein Sequence Classification</h1>
+                <h2 style="color: #e0e0e0; font-size: 32px; font-weight: 300;">Feature Selection & Machine Learning Implementation</h2>
+                <div style="margin-top: 50px; padding: 25px 40px; background: rgba(255,255,255,0.95); border-radius: 10px; color: #1a1a1a; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                    <p style="font-size: 20px; font-weight: 600; color: #0f2027;">Implementation of: Kannan et al., 2014</p>
+                    <p style="margin-top: 12px; font-style: italic; color: #2c5364; font-size: 18px;">"Efficient Feature Selection and Classification of Protein Sequences"</p>
                 </div>
-                <div style="margin-top: 50px; font-size: 16px;">
-                    <p>Research Project | November 2024</p>
+                <div style="margin-top: 60px;">
+                    <p style="font-size: 24px; font-weight: 600; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">By Akshay Waghmare</p>
+                    <!-- <p style="margin-top: 15px; font-size: 18px; color: #e0e0e0;">Research Project | November 2024</p> -->
                 </div>
             </div>
         </div>
@@ -343,10 +344,14 @@
                     <div>
                         <h2>Research Challenge</h2>
                         <div class="info-box">
-                            <strong>Goal:</strong> Automated protein family classification<br>
-                            <strong>Input:</strong> Protein amino acid sequences<br>
-                            <strong>Output:</strong> Predicted enzyme family<br>
-                            <strong>Target:</strong> 95%+ accuracy with minimal features
+                            <ul style="margin: 0 0 0 16px; padding: 0; list-style: disc; font-size: 17px;">
+                                <li><strong>Goal:</strong> Automatically classify proteins into families</li>
+                                <li><strong>Input:</strong> List of protein amino acid sequences</li>
+                                <li><strong>Output:</strong> Predict which enzyme family each protein belongs to</li>
+                                <li><strong>Target:</strong> Achieve at least 95% accuracy using the smallest possible number of features</li>
+                                <li>Fast, accurate, and easy to use for scientists</li>
+                                <li>No prior knowledge of proteins needed to use the system</li>
+                            </ul>
                         </div>
 
                         <h3>Manual vs Automated</h3>
@@ -428,7 +433,7 @@
             <div class="slide-content">
                 <h1>Step 1: Dataset Download - Implementation</h1>
                 
-                <h2>Python Code: Automated Data Collection</h2>
+                <h2>Python Code: Data Collection</h2>
                 <div class="code-block"><span class="code-comment"># dataset_downloader.py</span>
 <span class="code-keyword">from</span> Bio <span class="code-keyword">import</span> SeqIO
 <span class="code-keyword">import</span> requests
@@ -1112,30 +1117,7 @@ Random Forest,<span class="code-number">0.9600</span>,<span class="code-number">
    - CV Score: <span class="code-number">95.6</span>% ± <span class="code-number">1.5</span>%
    - Test errors: <span class="code-number">2</span>/<span class="code-number">50</span></div>
 
-                        <h2>Technologies Used</h2>
-                        <ul style="font-size: 13px;">
-                            <li><strong>Python 3.7+:</strong> Programming language</li>
-                            <li><strong>Biopython:</strong> Sequence handling</li>
-                            <li><strong>NumPy/Pandas:</strong> Data processing</li>
-                            <li><strong>Scikit-learn:</strong> ML algorithms</li>
-                            <li><strong>UniProt API:</strong> Data source</li>
-                        </ul>
-
-                        <h2>Practical Applications</h2>
-                        <ul style="font-size: 13px;">
-                            <li>Drug discovery: Rapid protein function prediction</li>
-                            <li>Disease research: Therapeutic target identification</li>
-                            <li>Genomics: Large-scale protein annotation</li>
-                            <li>Biotechnology: Enzyme engineering</li>
-                        </ul>
-
-                        <h2>Deliverables</h2>
-                        <ul style="font-size: 13px;">
-                            <li>7 Python modules (~2,000 lines)</li>
-                            <li>Complete documentation (70+ pages)</li>
-                            <li>20+ output files (CSV, plots, reports)</li>
-                            <li>Fully reproducible pipeline</li>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
@@ -1150,21 +1132,12 @@ Random Forest,<span class="code-number">0.9600</span>,<span class="code-number">
         <div class="slide title-slide">
             <div class="slide-content">
                 <h1>Thank You</h1>
-                <h2>Questions & Discussion</h2>
-                <div style="margin-top: 50px; font-size: 18px;">
-                    <div class="code-block" style="display: inline-block; text-align: left; margin-top: 30px;">
-<span class="code-comment"># Project Location</span>
-/Users/akshay.waghmare/ada/
-
-<span class="code-comment"># Quick Start</span>
-$ python3 demo_output.py  <span class="code-comment"># View demo</span>
-$ python3 main.py         <span class="code-comment"># Run pipeline</span>
-$ ls results/             <span class="code-comment"># Check outputs</span></div>
-                </div>
+                <!-- <h2>Questions & Discussion</h2> -->
+            
                 <div style="margin-top: 40px; font-size: 16px; opacity: 0.9;">
                     <p>Implementation of: Kannan et al., 2014</p>
                     <p style="margin-top: 10px;"><em>"Efficient Feature Selection and Classification of Protein Sequences"</em></p>
-                    <p style="margin-top: 20px;">Research Implementation | November 2024</p>
+                    <!-- <p style="margin-top: 20px;">Research Implementation | November 2024</p> -->
                 </div>
             </div>
         </div>
